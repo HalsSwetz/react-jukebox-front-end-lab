@@ -217,8 +217,8 @@ input:focus {
 .track-buttons button {
   padding: 0.4rem 0.8rem; 
   font-size: .8rem;  
-  background-color: #d17ad7;
-  color: white;
+  background-color: #e86610;
+  color: rgb(238, 241, 245);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -232,4 +232,23 @@ input:focus {
 .track-buttons button:focus {
   outline: none;
   border: 2px solid #5757e6; 
+}
+
+.cover-art-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cover-art {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.audio-clip {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
 }

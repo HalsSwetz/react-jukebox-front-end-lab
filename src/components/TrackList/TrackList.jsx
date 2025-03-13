@@ -14,13 +14,12 @@ const TrackList = (props) => {
                   onClick={() => props.handleSelect(track)}
                   >
                     {track.title} by {track.artist}
-
-                    {/* lab seems to say to put these buttons, but they look a little funny here */}
+                    
                     <div className="track-buttons">
-                        <button onClick={() => props.handleFormView(track)}>Edit</button>
-                        <button onClick={() => props.handleDeleteTrack(track._id)}>Delete</button>
+                        <button onClick={() => props.handleFormView(track)}>View Track</button>
+                        
                     </div>
-                  </li>
+                    </li>
                 ))}
               </ul>
             )}

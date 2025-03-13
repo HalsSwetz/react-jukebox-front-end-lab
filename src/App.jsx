@@ -59,7 +59,7 @@ const handleUpdateTrack = async (formData, trackId) => {
       throw new Error(updatedTrack.err);
     }
     const updatedTrackList = tracks.map((track) => (
-      track._id !== updatedTrack._id ? track : updatedTrack
+     track._id !== updatedTrack._id ? track : updatedTrack
     ));
     setTracks(updatedTrackList);
     setSelected(updatedTrack);
@@ -83,8 +83,6 @@ const handleDeleteTrack = async (trackId) => {
     console.log(err);
   }
 };
-
-
 
 
 return (
